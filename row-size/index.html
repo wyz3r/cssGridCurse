@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Row size</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      /* background: rgb(193, 134, 207); */
+    }
+    .container{
+      display: grid;
+    
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      grid-gap: 5px;
+      height: 100vh;
+      
+    }
+    
+    
+    .item {
+      background: lightblue;
+      padding: 5px;
+      border: 1px solid red;
+      /* border-radius: 20px; */
+    }
+    .item:nth-of-type(1){
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+    }
+    .item:nth-of-type(2){
+      grid-column: 4 / span 2;
+      grid-row: 1 / span 2;
+    }
+    .item:nth-of-type(3){
+      grid-column: 6 / span 2;
+      
+    }
+    
+    /* .item .item {
+      background: yellow;
+    }
+    .header{
+      grid-area: header;
+      background:  rgb(3, 125, 141);
+    }
+    .left{
+      grid-area: left;
+      background:  rgb(223, 112, 104);
+      
+    }
+    .contenido{
+      grid-area: contenido;
+      background:  rgb(226, 58, 46);
+
+    }
+    .footer {
+      grid-area: footer;
+      background:  rgb(205, 46, 226);
+
+    } */
+  </style>
+</head>
+<body>
+  <section class="container">
+   <div class="item"> #1</div>
+   <div class="item"> #2</div>
+   <div class="item"> #3</div>
+   <div class="item"> #4</div>
+   <div class="item"> #5</div>
+   
+  </section>
+</body>
+</html>

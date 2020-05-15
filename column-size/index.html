@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Funciones</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgb(193, 134, 207);
+    }
+    .container{
+      display: grid;
+    
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 10px;
+      height: 100vh;
+      
+    }
+    
+    
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid black;
+      /* border-radius: 20px; */
+    }
+    .item:nth-of-type(1){
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .item:nth-of-type(8){
+      grid-column: 1 / -1;
+
+    }
+    .item:nth-of-type(7){
+      grid-column: 2 / 4;
+
+    }
+    /* .item .item {
+      background: yellow;
+    }
+    .header{
+      grid-area: header;
+      background:  rgb(3, 125, 141);
+    }
+    .left{
+      grid-area: left;
+      background:  rgb(223, 112, 104);
+      
+    }
+    .contenido{
+      grid-area: contenido;
+      background:  rgb(226, 58, 46);
+
+    }
+    .footer {
+      grid-area: footer;
+      background:  rgb(205, 46, 226);
+
+    } */
+  </style>
+</head>
+<body>
+  <section class="container">
+   <div class="item"> #1</div>
+   <div class="item"> #2</div>
+   <div class="item"> #3</div>
+   <div class="item"> #4</div>
+   <div class="item"> #5</div>
+   <div class="item"> #6</div>
+   <div class="item"> #7</div>
+   <div class="item"> #8</div>
+   <div class="item"> #9</div>
+   <div class="item"> #10</div>
+   <div class="item"> #11</div>
+   <div class="item"> #12</div>
+  </section>
+</body>
+</html>
